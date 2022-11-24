@@ -166,3 +166,38 @@ chart
 .c3-grid{
     opacity: 0.4;
 }
+.c3-tooltip-container{
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 5%), 0px 2px 4px 0px rgb(0 0 0 /10%),  0px 7px 20px 0px rgb(0 0 0 /10%);
+    min-width: 180px;
+    padding-bottom: 4px;
+    background: #fff;
+    opacity: 1;
+}
+.c3-tooltip{
+    opacity: 1;
+    border: none;
+    width: 100%;
+    box-shadow: none;
+    tr{
+        border: none;
+        &:nth-child(2) td{
+            padding-top: 8px;
+        }
+    }
+    th{
+        padding: 8px 12px;
+        font-size: 12px;
+        color: #272c30;
+        background: #f2f4f6;
+    }
+    td{
+        padding: 4px 12px;
+        font-size: 12px;
+        border: none;
+        &.value{
+            font-weight: 600;
+        }
+    }
+}
