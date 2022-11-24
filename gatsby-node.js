@@ -16,3 +16,12 @@ exports.createPages = async ({ actions }) => {
     defer: true,
   })
 }
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      fallback: {
+        fs: false
+      }
+    }
+  })
+}

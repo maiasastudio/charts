@@ -1,0 +1,168 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #f4f6f9;
+    font-family: 'inter', sans-serif;
+    color: #272c30;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+}
+h1{
+    margin-bottom: 36px;
+    font-size: 28px;
+    line-height: 33.6px;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: #0075e1;
+}
+.wrapper{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+}
+.navbar{
+    background: #0075e1;
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+.sidebar{
+    background: #fff;
+    width: 56px;
+    height: 100vh;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    z-index: 1;
+}
+.main-webapp{
+    width: 100%;
+    padding:89px 60px 116px 116px;
+}
+.toolbar{
+    width: 100%;
+    height: 53px;
+    margin-bottom:35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .filters{
+        display: flex;
+        gap: 14px;
+    }
+}
+.sampleBox{
+    background: #000;
+    border-radius: 4px;
+    &.button{
+        background: #fff;
+        box-shadow: 0px 5px 5px rgb(9 14 18 / 3%);
+        &.cta{
+            background: #0075e1;
+        }
+    }
+}
+.ds-row{
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-md-4{
+    width: 33.33%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-md-6{
+    width:50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-md-12{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.ds-card{
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0px 10px 40px 0 rgb(62 57 107 / 7%), 0px 2px 9px 0px rgb(62 57 107 /6%);
+    &.billing{
+        background: #0075e1;
+    }
+    .card-title{
+        padding: 12px 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        margin-bottom: 12px;
+        .heading-3{
+            position: relative;
+            margin-bottom: -2px;
+        }
+    }
+    .card-content{
+        padding: 12px 20px;
+    }
+    .card-footer{
+        margin-top: 8px;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        &.full-width{
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            a{
+                padding: 12px 20px;
+                display: block;
+                &:hover{
+                    background: #f2f4f6;
+                }
+            }
+        }
+    }
+}
+
+.text{
+    &.heading-h3{
+        font-size: 18px;
+        line-height: 32px;
+    }
+    &.overline{
+        font-size: 12px;
+        line-height: 20px;
+        color: #5f6f89;
+    }
+}
+#ds-org-chart, #ds-account-chart{
+    transform: translateX(-5px);
+}
+
+
+/*------------------------------------------
+chart
+------------------------------------------*/
+.c3-line{
+    stroke-width: 1.5px;
+}
+.c3 text{
+    fill: #272c30;
+}
+.c3-legend-item{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.c3-grid{
+    opacity: 0.4;
+}

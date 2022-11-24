@@ -38,6 +38,15 @@ function Seo({ description, title, children }) {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
       {children}
+      
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.20/c3.min.css" integrity="sha512-cznfNokevSG7QPA5dZepud8taylLdvgr0lDqw/FEZIhluFsSwyvS81CMnRdrNSKwbsmc43LtRd2/WMQV+Z85AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     </>
   )
 }
